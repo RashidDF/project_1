@@ -1,6 +1,6 @@
 "use strict";
 
-const lines = 5;
+const lines = 17;
 let result = '';
 let etoile = '*';
 
@@ -10,6 +10,6 @@ for(let i=lines; i>=0; i--){
         espace += ' ';
     }
     result = espace + etoile + espace;
-    console.log(result + '\n');
+    console.log(result);
     etoile += '**';
 }

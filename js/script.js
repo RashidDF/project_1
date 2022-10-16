@@ -9,18 +9,18 @@ const personMovieDB = {
     privat: false
 };
 
-// for(let i=0; i<2; i++){
-//     const 
-//     a = prompt('Один из последних просмотренных фильмов?', ''),
-//     b = prompt('На сколько его оцениваете?', '');
+for(let i=0; i<2; i++){
+    const 
+    a = prompt('Один из последних просмотренных фильмов?', ''),
+    b = prompt('На сколько его оцениваете?', '');
     
-//     if(a != null && b != null && a != '' && b != '' && a.length < 50){
-//         personMovieDB.movies[a] = b;
-//     } else {
-//         console.log('Error');
-//         i--;
-//     }         
-// }
+    if(a != null && b != null && a != '' && b != '' && a.length < 50){
+        personMovieDB.movies[a] = b;
+    } else {
+        console.log('Error');
+        i--;
+    }         
+}
 
 if(personMovieDB.count > 0 && personMovieDB.count < 10){
     console.log('Просмотренно довольно мало фильмов');
@@ -34,5 +34,5 @@ if(personMovieDB.count > 0 && personMovieDB.count < 10){
     console.log('Error');
 }
 
-// console.log(personMovieDB);
+console.log(personMovieDB);
 console.log(personMovieDB.count);
